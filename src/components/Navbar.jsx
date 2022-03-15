@@ -24,11 +24,12 @@ const Left = styled.div`
   flex: 1;
   width: 33.3333333333%;
   display: flex;
+  justify-content: center;
   text-align: center;
   padding-right: 25px;
 `;
 const Center = styled.div`
-  flex: 1;
+  flex: 2;
   width: 33.3333333333%;
 `;
 const Right = styled.div`
@@ -42,6 +43,7 @@ const SearchContainer = styled.div`
   border: 1px solid lightgray;
   justify-content: space-between;
   flex: 1;
+  align-items: center;
   margin-left: 5px;
 `;
 
@@ -62,7 +64,7 @@ const Navbar = () => {
           <Lagnuage>EN</Lagnuage>
           <SearchContainer>
             <Input></Input>
-            <Search></Search>
+            <Search style={{ color: "red", fontSize: "24px" }}></Search>
           </SearchContainer>
         </Left>
         <Center>
